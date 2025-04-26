@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="text-4xl">
+        André
+        <span class="text-blue-500">.</span>
+      </h1>
+      <nav id="header-cont">
+        <ul class="flex gap-8 text-lg" id="header-menu">
+          <li class="header-cont">
+            <a href="#hero"> Inicio</a>
+          </li>
+          <li class="header-cont">
+            <a href="#sobre">Sobre</a>
+          </li>
+          <li class="header-cont">
+            <a href="#habilidades">Habilidades</a>
+          </li>
+          <li class="header-cont">
+            <a href="#projetos">Projetos</a>
+          </li>
+          <li class="header-cont">
+            <a href="#contato">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div id="container-cont" class="flex w-full justify-between">
+          <div id="hero-cont" class="flex w-150 flex-col justify-center gap-10">
+            <p class="">Software Developer</p>
+            <h2 class="-mt-8 text-5xl">
+              Olá, eu sou o André
+              <span class="text-blue-500">Desenvolvedor fullstack</span>
+            </h2>
+            <p class="text-lg">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+              quidem ad, impedit nulla, quae amet perferendis ducimus sapiente
+              mollitia illum aut itaque quas dolore dolorum quisquam sequi qui
+              voluptas molestias?
+            </p>
+            <div class="flex gap-5" id="botoes">
+              <button class="botao1 h-9 w-30">Contato</button>
+              <button class="botao2 h-9 w-30">Projetos</button>
+              <label
+                class="botao2 flex h-9 w-30 items-center justify-center gap-1"
+              >
+                Curriculo
+                <i class="fa-solid fa-download"></i>
+              </label>
+            </div>
+            <div id="icones" class="flex gap-5">
+              <a href="">
+                <i class="fa-brands fa-square-facebook btnRedes"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-github btnRedes"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-linkedin-in btnRedes"></i>
+              </a>
+            </div>
+          </div>
+          <img
+            class="h-130 rounded-4xl inset-shadow-sm inset-shadow-blue-500/60"
+            src="images/foto.png"
+          />
+        </div>
+      </section>
+
+      <section id="sobre" class="sobre">
+        <img
+          src="images/foto3.png"
+          class="h-130 rounded-4xl inset-shadow-sm inset-shadow-blue-500/60"
+        />
+        <div
+          id="sobre-cont"
+          class="flex w-200 flex-col justify-center gap-10 rounded-4xl p-10"
+        >
+          <h2 class="text-5xl font-bold">
+            SOBRE
+            <span class="text-blue-500">MIM</span>
+          </h2>
+          <p
+            class="rounded-xl bg-zinc-900 p-5 text-xl inset-shadow-xs inset-shadow-[#121214]"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            labore odit dignissimos. Asperiores soluta repellendus consequatur
+            quo quasi eos reprehenderit eveniet harum aut, beatae molestiae,
+            odio porro distinctio, non magnam. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Nisi, laudantium. Inventore cupiditate
+            itaque iste provident, praesentium officiis! Labore expedita quam
+            culpa non! Optio iste similique quo possimus aspernatur beatae
+            tempora?
+          </p>
+          <div id="botoes" class="flex justify-between">
+            <div class="botoes-cont flex gap-5">
+              <button class="botao1 h-9 w-30">Contato</button>
+              <label
+                class="botao2 flex h-9 w-30 items-center justify-center gap-1"
+              >
+                Curriculo
+                <i class="fa-solid fa-download"></i>
+              </label>
+            </div>
+            <div id="icones" class="flex gap-5">
+              <a href="">
+                <i class="fa-brands fa-square-facebook btnRedes"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-github btnRedes"></i>
+              </a>
+              <a href="">
+                <i class="fa-brands fa-linkedin-in btnRedes"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="habilidades" class="habilidades">
+        <div id="habilidades-container" class="flex flex-col items-center">
+          <h2 class="mb-10 text-center text-5xl font-bold text-blue-500">
+            HABILIDADES
+          </h2>
+          <div id="habilidades-container" class="grid w-full grid-cols-3 gap-5">
+            <div id="habilidades-cont" class="habilidades-cont">
+              <i class="fa-solid fa-palette mb-3 text-4xl text-blue-500"></i>
+              <h3 class="mb-2 text-xl text-blue-400">UI Design</h3>
+              <p>Interfaces modernas e fáceis de usar.</p>
+            </div>
+            <div id="habilidades-cont" class="habilidades-cont">
+              <i class="fa-solid fa-desktop mb-3 text-4xl text-blue-500"></i>
+              <h3 class="mb-2 text-xl text-blue-400">Web Design</h3>
+              <p>Sites bonitos e adaptáveis a qualquer tela.</p>
+            </div>
+            <div id="habilidades-cont" class="habilidades-cont">
+              <i class="fa-solid fa-desktop mb-3 text-4xl text-blue-500"></i>
+              <h3 class="mb-2 text-xl text-blue-400">
+                Desenvolvimento Front-End
+              </h3>
+              <p>Interfaces interativas com HTML, CSS e JS.</p>
+            </div>
+            <div id="habilidades-cont" class="habilidades-cont">
+              <i
+                class="fa-solid fa-screwdriver-wrench mb-3 text-4xl text-blue-500"
+              ></i>
+              <h3 class="mb-2 text-xl text-blue-400">
+                Back-End e Banco de Dados
+              </h3>
+              <p>Lógica, segurança e banco de dados.</p>
+            </div>
+            <div id="habilidades-cont" class="habilidades-cont">
+              <i class="fa-solid fa-photo-film mb-3 text-4xl text-blue-500"></i>
+              <h3 class="mb-2 text-xl text-blue-400">Edição de Videos</h3>
+              <p>Ajustes e melhorias em vídeos e sites.</p>
+            </div>
+            <div id="habilidades-cont" class="habilidades-cont">
+              <i class="fa-solid fa-images mb-3 text-4xl text-blue-500"></i>
+              <h3 class="text-blue-400">Manipulação e Edição de Imagens</h3>
+              <p>Artes visuais com Photoshop e Canva.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="tecnologias-container" class="mt-5">
+          <div
+            id="tec-container"
+            class="flex w-full items-center justify-between bg-[#242427] p-5"
+          >
+            <img src="images/html5.svg" class="tecnologias" />
+            <img src="images/css.svg" class="tecnologias" />
+            <img src="images/tailwindcss.svg" class="tecnologias" />
+            <img src="images/react.svg" class="tecnologias" />
+            <img src="images/php.svg" class="tecnologias" />
+            <img src="images/mysql.svg" class="tecnologias" />
+            <img src="images/laravel.svg" class="tecnologias" />
+            <img src="images/git.svg" class="tecnologias" />
+            <img src="images/github.svg" class="tecnologias" />
+            <img src="images/vite.svg" class="tecnologias" />
+            <img src="images/nodedotjs.svg" class="tecnologias" />
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" class="projetos">
+        <h2 class="mb-15 text-center text-5xl font-bold">
+          MEUS
+          <span class="text-blue-400">PROJETOS</span>
+        </h2>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/projeto1.jpg" class="swiper-img" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/projeto2.jpg" class="swiper-img" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/projeto3.jpg" class="swiper-img" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/projeto4.jpeg" class="swiper-img" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/projeto5.jpeg" class="swiper-img" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next px-[10%]"></div>
+        <div class="swiper-button-prev px-[10%]"></div>
+        <div class="swiper-pagination"></div>
+      </section>
+
+      <section id="contato" class="contato">
+        <form
+          action=""
+          method="post"
+          class="form-contato w-full max-w-lg rounded-lg p-8 shadow-lg"
+        >
+          <h2 class="mb-5 text-center text-4xl font-bold text-blue-500">
+            MANDE UM
+            <spa class="text-blue-500">EMAIL</spa>
+          </h2>
+          <p class="mb-8 text-justify text-lg text-zinc-400">
+            Entre em contato para mais informações ou dúvidas. Responderemos o
+            mais breve possível!
+          </p>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Seu Nome:"
+            class="form-input"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Seu Email:"
+            class="form-input"
+          />
+          <textarea
+            name="mensagem"
+            id="mensagem"
+            placeholder="Sua Mensagem:"
+            class="form-input resize-none"
+            rows="5"
+          ></textarea>
+          <button type="submit" class="botao1 h-15 w-full">
+            Enviar Mensagem
+          </button>
+        </form>
+
+        <div class="w-90">
+          <div class="mb-5 flex cursor-pointer items-center space-x-5">
+            <i class="fa-solid fa-phone item-contato"></i>
+            <div>
+              <p>Numero:</p>
+              <p>(16) 99756-6458</p>
+            </div>
+          </div>
+          <div class="mb-5 flex cursor-pointer items-center space-x-5">
+            <i class="fa-solid fa-envelope item-contato"></i>
+            <div>
+              <p>Email:</p>
+              <p>andre@gmail.com</p>
+            </div>
+          </div>
+          <div class="flex cursor-pointer items-center space-x-5">
+            <i class="fa-solid fa-location-dot item-contato p-5.5"></i>
+            <div>
+              <p>Endereço:</p>
+              <p>rua natal, n° 859</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Feito por Ruan &copy 2025</p>
+      <ul class="flex gap-6">
+        <li>
+          <a href="#">Facebook</a>
+        </li>
+        <li>
+          <a href="#">Twitter</a>
+        </li>
+        <li>
+          <a href="#">Instagram</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="scripts/indenx.js"></script>
+  </body>
+</html>

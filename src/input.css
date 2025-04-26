@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: Poppins, "sans-serif";
+}
+
+@layer base {
+  html {
+    @apply font-poppins scroll-smooth;
+  }
+
+  body {
+    @apply bg-zinc-900 text-zinc-50;
+  }
+
+  footer {
+    @apply flex h-15 items-center justify-center gap-6 bg-zinc-950;
+  }
+
+  header {
+    @apply sticky top-0 z-50 flex items-center justify-between px-[10%] py-5;
+  }
+}
+
+@layer components {
+  .header-cont {
+    @apply relative transition-all duration-300 ease-in-out after:absolute after:bottom-0 after:left-0 after:h-[0.1rem] after:w-0 after:bg-blue-500 after:transition-all after:duration-300 after:content-[''] hover:after:w-full;
+  }
+
+  .hero {
+    @apply flex h-[calc(100vh-5rem)] scroll-m-[5rem] flex-col items-center justify-center px-[10%];
+  }
+
+  .sobre {
+    @apply flex h-screen scroll-m-[5rem] items-center justify-between bg-[#121214] px-[10%];
+  }
+
+  .habilidades {
+    @apply flex flex-col justify-center px-[10%] py-30;
+  }
+
+  .projetos {
+    @apply relative flex scroll-m-[5rem] flex-col items-center justify-center px-[16%] py-18;
+  }
+
+  .contato {
+    @apply flex items-center justify-center space-x-20 bg-[#121214] px-[10%] py-30;
+  }
+
+  .scrolled {
+    @apply bg-[#101011];
+  }
+
+  .botao1 {
+    @apply cursor-pointer rounded-md bg-blue-500 font-bold text-zinc-900 hover:border-2 hover:border-blue-500 hover:bg-zinc-900 hover:text-zinc-50;
+  }
+
+  .botao2 {
+    @apply cursor-pointer rounded-md border-2 border-blue-500 font-bold text-blue-500 hover:bg-blue-500 hover:text-zinc-900;
+  }
+
+  .btnRedes {
+    @apply cursor-pointer rounded-full border-2 border-blue-500 p-2 text-blue-500 hover:bg-blue-500 hover:text-zinc-900;
+  }
+
+  .habilidades-cont {
+    @apply bg-[#242427] p-5 inset-shadow-xs inset-shadow-[#121214];
+  }
+
+  .tecnologias {
+    @apply h-15;
+  }
+
+  .swiper {
+    @apply h-130 w-full;
+  }
+
+  .swiper-slide {
+    @apply flex cursor-pointer items-center justify-center overflow-hidden rounded-4xl text-lg;
+  }
+
+  .swiper-img {
+    @apply h-full w-full object-cover;
+  }
+  .swiper-slide:hover .swiper-img {
+    @apply scale-105 transition-transform duration-300 ease-in-out;
+  }
+
+  .form-contato {
+    @apply flex flex-col gap-2 bg-[#242427] p-5;
+  }
+
+  .form-input {
+    @apply mb-5 w-full rounded-md bg-zinc-900 p-3 text-zinc-50 placeholder-zinc-500 focus:border-blue-500 focus:outline-none;
+  }
+
+  .item-contato {
+    @apply bg-[#242427] p-5 text-xl text-blue-500;
+  }
+}
