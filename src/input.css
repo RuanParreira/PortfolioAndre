@@ -20,21 +20,21 @@
   }
 
   header {
-    @apply sticky top-0 z-50 flex items-center justify-between px-[10%] py-5;
+    @apply sticky top-0 z-50 flex items-center justify-between px-[4%] py-5 md:px-[10%];
   }
 }
 
 @layer components {
   .header-cont {
-    @apply relative transition-all duration-300 ease-in-out after:absolute after:bottom-0 after:left-0 after:h-[0.1rem] after:w-0 after:bg-blue-500 after:transition-all after:duration-300 after:content-[''] hover:after:w-full;
+    @apply transition-all duration-300 ease-in-out after:absolute after:bottom-0 after:left-0 after:h-[0.1rem] after:w-0 after:bg-blue-500 after:transition-all after:duration-300 after:content-[''] hover:after:w-full md:relative;
   }
 
   .hero {
-    @apply flex h-[calc(100vh-5rem)] scroll-m-[5rem] flex-col items-center justify-center px-[10%];
+    @apply my-5 flex scroll-m-[5rem] flex-col items-center justify-center px-[4%] md:my-0 md:h-[calc(100vh-5rem)] md:px-[10%];
   }
 
   .sobre {
-    @apply flex h-screen scroll-m-[5rem] items-center justify-between bg-[#121214] px-[10%];
+    @apply flex h-screen scroll-m-[5rem] flex-col items-center justify-between bg-[#121214] px-[10%] md:flex-row;
   }
 
   .habilidades {

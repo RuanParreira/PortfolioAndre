@@ -24,7 +24,7 @@
         André
         <span class="text-blue-500">.</span>
       </h1>
-      <nav id="header-cont">
+      <nav id="header-cont" class="hidden md:block">
         <ul class="flex gap-8 text-lg" id="header-menu">
           <li class="header-cont">
             <a href="#hero"> Inicio</a>
@@ -47,14 +47,22 @@
 
     <main>
       <section id="hero" class="hero">
-        <div id="container-cont" class="flex w-full justify-between">
-          <div id="hero-cont" class="flex w-150 flex-col justify-center gap-10">
-            <p class="">Software Developer</p>
-            <h2 class="-mt-8 text-5xl">
+        <div
+          id="container-cont"
+          class="flex w-full flex-col-reverse items-center md:flex-row md:justify-between"
+        >
+          <div
+            id="hero-cont"
+            class="flex w-full flex-col justify-center gap-10 md:w-150"
+          >
+            <p class="uppercase">
+              Software<span class="text-blue-500"> Developer</span>
+            </p>
+            <h2 class="-mt-8 w-full text-4xl md:text-5xl">
               Olá, eu sou o André
               <span class="text-blue-500">Desenvolvedor fullstack</span>
             </h2>
-            <p class="text-lg">
+            <p class="w-full text-lg">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
               quidem ad, impedit nulla, quae amet perferendis ducimus sapiente
               mollitia illum aut itaque quas dolore dolorum quisquam sequi qui
@@ -62,13 +70,12 @@
             </p>
             <div class="flex gap-5" id="botoes">
               <button class="botao1 h-9 w-30">Contato</button>
-              <button class="botao2 h-9 w-30">Projetos</button>
-              <label
+              <button
                 class="botao2 flex h-9 w-30 items-center justify-center gap-1"
               >
                 Curriculo
                 <i class="fa-solid fa-download"></i>
-              </label>
+              </button>
             </div>
             <div id="icones" class="flex gap-5">
               <a href="">
@@ -83,7 +90,7 @@
             </div>
           </div>
           <img
-            class="h-130 rounded-4xl inset-shadow-sm inset-shadow-blue-500/60"
+            class="mb-8 h-60 w-60 rounded-4xl object-cover inset-shadow-sm inset-shadow-blue-500/60 md:mb-0 md:h-130 md:w-100"
             src="images/foto.png"
           />
         </div>
@@ -92,11 +99,11 @@
       <section id="sobre" class="sobre">
         <img
           src="images/foto3.png"
-          class="h-130 rounded-4xl inset-shadow-sm inset-shadow-blue-500/60"
+          class="hidden h-130 w-100 rounded-4xl object-cover inset-shadow-sm inset-shadow-blue-500/60 md:block"
         />
         <div
           id="sobre-cont"
-          class="flex w-200 flex-col justify-center gap-10 rounded-4xl p-10"
+          class="flex w-full flex-col justify-center gap-10 rounded-4xl p-10 md:w-200"
         >
           <h2 class="text-5xl font-bold">
             SOBRE
