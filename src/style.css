@@ -756,6 +756,9 @@
       height: calc(100vh - 5rem);
     }
     @media (width >= 64rem) {
+      scroll-margin: 5rem;
+    }
+    @media (width >= 64rem) {
       padding-inline: 10%;
     }
     @media (width >= 64rem) {
