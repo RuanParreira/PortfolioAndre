@@ -703,6 +703,7 @@
     align-items: center;
     justify-content: center;
     padding-inline: 4%;
+    padding-block: calc(var(--spacing) * 5);
     @media (width >= 64rem) {
       margin-block: calc(var(--spacing) * 0);
     }
@@ -718,13 +719,13 @@
   }
   .sobre {
     display: flex;
-    height: 100vh;
+    scroll-margin: 6rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #121214;
     padding-inline: 4%;
-    padding-block: calc(var(--spacing) * 0);
+    padding-block: calc(var(--spacing) * 10);
     @media (width >= 64rem) {
       height: calc(100vh - 5rem);
     }
@@ -739,6 +740,9 @@
     }
     @media (width >= 64rem) {
       padding-inline: 10%;
+    }
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 0);
     }
   }
   .habilidades {
