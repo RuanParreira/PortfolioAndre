@@ -26,7 +26,7 @@
           <span class="text-blue-500">.</span>
         </h1>
       </a>
-      <nav id="header-cont" class="hidden md:block">
+      <nav id="header-cont" class="hidden lg:block">
         <ul class="flex space-x-8 text-lg" id="header-menu">
           <li class="header-cont">
             <a href="#hero"> Inicio</a>
@@ -51,16 +51,16 @@
       <section id="hero" class="hero">
         <div
           id="container-cont"
-          class="flex w-full flex-col-reverse items-center md:flex-row md:justify-between"
+          class="flex w-full flex-col-reverse items-center lg:flex-row lg:justify-between"
         >
           <div
             id="hero-cont"
-            class="flex w-full flex-col justify-center space-y-10 md:w-150"
+            class="flex w-full flex-col justify-center space-y-10 lg:w-150"
           >
             <p class="text-bold uppercase">
               Software<span class="text-blue-500"> Developer</span>
             </p>
-            <h2 class="-mt-8 w-full text-4xl md:text-5xl">
+            <h2 class="-mt-8 w-full text-4xl lg:text-5xl">
               Olá, eu sou o André
               <span class="text-blue-500">Desenvolvedor fullstack</span>
             </h2>
@@ -90,7 +90,7 @@
             </div>
           </div>
           <img
-            class="mb-8 h-60 w-60 rounded-4xl object-cover inset-shadow-sm inset-shadow-blue-500/60 md:mb-0 md:h-130 md:w-100"
+            class="mb-8 h-60 w-60 rounded-4xl object-cover inset-shadow-sm inset-shadow-blue-500/60 lg:mb-0 lg:h-130 lg:w-100"
             src="images/foto.png"
           />
         </div>
@@ -99,11 +99,11 @@
       <section id="sobre" class="sobre">
         <img
           src="images/foto3.png"
-          class="hidden h-130 w-100 rounded-4xl object-cover inset-shadow-sm inset-shadow-blue-500/60 md:block"
+          class="hidden h-130 w-100 rounded-4xl object-cover inset-shadow-sm inset-shadow-blue-500/60 lg:block"
         />
         <div
           id="sobre-cont"
-          class="flex w-full flex-col justify-center space-y-5 rounded-4xl md:w-160"
+          class="flex w-full flex-col justify-center space-y-5 rounded-4xl lg:w-160"
         >
           <h2 class="text-5xl font-bold">
             SOBRE
@@ -154,7 +154,7 @@
           </div>
           <div
             id="botoes"
-            class="flex flex-col justify-between space-y-10 md:flex-row md:space-y-0"
+            class="flex flex-col justify-between space-y-10 lg:flex-row lg:space-y-0"
           >
             <div class="botoes-cont flex space-x-5">
               <button class="botao1 h-9 w-30">Contato</button>
@@ -185,7 +185,7 @@
           </h2>
           <div
             id="habilidades-container"
-            class="grid w-full grid-cols-2 gap-5 md:grid-cols-3"
+            class="grid w-full grid-cols-2 gap-5 lg:grid-cols-3"
           >
             <div id="habilidades-cont" class="habilidades-cont">
               <i class="fa-solid fa-palette mb-3 text-4xl text-blue-500"></i>
@@ -199,9 +199,7 @@
             </div>
             <div id="habilidades-cont" class="habilidades-cont">
               <i class="fa-solid fa-desktop mb-3 text-4xl text-blue-500"></i>
-              <h3 class="mb-2 text-xl text-blue-400">
-                Desenvolvimento Front-End
-              </h3>
+              <h3 class="mb-2 text-xl text-blue-400">Dev Front-End</h3>
               <p>Interfaces interativas com HTML, CSS e JS.</p>
             </div>
             <div id="habilidades-cont" class="habilidades-cont">
@@ -252,8 +250,8 @@
             </div>
           </div>
         </div>
-        <div class="swiper-button-next px-[10%]"></div>
-        <div class="swiper-button-prev px-[10%]"></div>
+        <div class="swiper-button-next px-[6%] lg:px-[10%]"></div>
+        <div class="swiper-button-prev px-[6%] lg:px-[10%]"></div>
         <div class="swiper-pagination"></div>
       </section>
 
@@ -297,22 +295,26 @@
           </button>
         </form>
 
-        <div class="w-90">
-          <div class="mb-5 flex cursor-pointer items-center space-x-5">
+        <div class="flex w-full flex-col py-5 lg:w-90 lg:flex-col lg:py-0">
+          <div
+            class="mb:space-x-2 mb-5 flex cursor-pointer items-center space-x-2"
+          >
             <i class="fa-solid fa-phone item-contato"></i>
             <div>
               <p>Numero:</p>
               <p>(16) 99756-6458</p>
             </div>
           </div>
-          <div class="mb-5 flex cursor-pointer items-center space-x-5">
+          <div
+            class="mb:space-x-5 mb-5 flex cursor-pointer items-center space-x-2"
+          >
             <i class="fa-solid fa-envelope item-contato"></i>
             <div>
               <p>Email:</p>
               <p>andre@gmail.com</p>
             </div>
           </div>
-          <div class="flex cursor-pointer items-center space-x-5">
+          <div class="mb:space-x-5 flex cursor-pointer items-center space-x-2">
             <i class="fa-solid fa-location-dot item-contato p-5.5"></i>
             <div>
               <p>Endereço:</p>
