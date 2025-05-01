@@ -697,9 +697,8 @@
     color: var(--color-white);
   }
   .hero {
-    margin-block: calc(var(--spacing) * 5);
     display: flex;
-    scroll-margin: 5rem;
+    scroll-margin: 6rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -711,13 +710,15 @@
       height: calc(100vh - 5rem);
     }
     @media (width >= 64rem) {
+      scroll-margin: 5rem;
+    }
+    @media (width >= 64rem) {
       padding-inline: 10%;
     }
   }
   .sobre {
     display: flex;
     height: 100vh;
-    scroll-margin: 5rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -726,6 +727,9 @@
     padding-block: calc(var(--spacing) * 0);
     @media (width >= 64rem) {
       height: calc(100vh - 5rem);
+    }
+    @media (width >= 64rem) {
+      scroll-margin: 5rem;
     }
     @media (width >= 64rem) {
       flex-direction: row;
@@ -739,7 +743,7 @@
   }
   .habilidades {
     display: flex;
-    scroll-margin: 5rem;
+    scroll-margin: 6rem;
     flex-direction: column;
     justify-content: center;
     padding-inline: 4%;
@@ -758,7 +762,7 @@
     position: relative;
     display: flex;
     height: 100vh;
-    scroll-margin: 5rem;
+    scroll-margin: 2rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -768,15 +772,21 @@
     @media (width >= 64rem) {
       height: calc(100vh - 5rem);
     }
+    @media (width >= 64rem) {
+      scroll-margin: 5rem;
+    }
   }
   .contato {
     display: flex;
-    scroll-margin: 5rem;
+    scroll-margin: 6rem;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     @media (width >= 64rem) {
       height: calc(100vh - 5rem);
+    }
+    @media (width >= 64rem) {
+      scroll-margin: 5rem;
     }
     @media (width >= 64rem) {
       flex-direction: row;

@@ -29,11 +29,30 @@ const swiper = new Swiper(".swiper", {
 });
 
 function openNav() {
-  document.getElementById("mySidepanel").style.width = "250px";
+  const sidepanel = document.getElementById("mySidepanel");
+  sidepanel.style.width = "250px";
+
+  document.addEventListener("click", closeOnClickOutside);
+
+  const anchors = sidepanel.querySelectorAll("a");
+  anchors.forEach((anchor) => {
+    anchor.addEventListener("click", closeNav);
+  });
 }
 
 function closeNav() {
-  document.getElementById("mySidepanel").style.width = "0";
+  const sidepanel = document.getElementById("mySidepanel");
+  sidepanel.style.width = "0";
+
+  document.removeEventListener("click", closeOnClickOutside);
+}
+
+function closeOnClickOutside(event) {
+  const sidepanel = document.getElementById("mySidepanel");
+
+  if (!sidepanel.contains(event.target) && event.target.id !== "menuMobile") {
+    closeNav();
+  }
 }
 
 const header = document.querySelector("header");

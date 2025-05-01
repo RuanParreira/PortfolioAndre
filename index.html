@@ -51,14 +51,20 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
           <i class="fa-solid fa-x"></i>
         </a>
-        <a href="#" class="sidepanel-cont">Inicio</a>
-        <a href="#" class="sidepanel-cont">Sobre</a>
-        <a href="#" class="sidepanel-cont">Habilidades</a>
-        <a href="#" class="sidepanel-cont">Projetos</a>
-        <a href="#" class="sidepanel-cont">Contato</a>
+        <a href="#hero" class="sidepanel-cont">Inicio</a>
+        <a href="#sobre" class="sidepanel-cont">Sobre</a>
+        <a href="#habilidades" class="sidepanel-cont">Habilidades</a>
+        <a href="#projetos" class="sidepanel-cont">Projetos</a>
+        <a href="#contato" class="sidepanel-cont">Contato</a>
       </div>
 
-      <button class="openbtn text-3xl lg:hidden" onclick="openNav()">☰</button>
+      <button
+        id="menuMobile"
+        class="openbtn text-3xl lg:hidden"
+        onclick="openNav()"
+      >
+        ☰
+      </button>
     </header>
 
     <main>
@@ -275,7 +281,7 @@
         </div>
         <div class="swiper-button-next px-[6%] lg:px-[10%]"></div>
         <div class="swiper-button-prev px-[6%] lg:px-[10%]"></div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination hidden lg:block"></div>
       </section>
 
       <section id="contato" class="contato">
