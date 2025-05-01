@@ -1,5 +1,5 @@
 const swiper = new Swiper(".swiper", {
-  slidesPerView: 3, // Garante que 3 slides sejam exibidos ao mesmo tempo
+  slidesPerView: 3, // Garante que 3 slides sejam exibidos ao mesmo tempo em telas maiores
   spaceBetween: 100, // Espaço entre os slides
   slidesPerGroup: 1, // Passa 1 slide por vez
   centeredSlides: true, // Centraliza os slides
@@ -13,8 +13,18 @@ const swiper = new Swiper(".swiper", {
   },
   loop: true, // Ativa o loop infinito
   autoplay: {
-    delay: 5500, // A cada 2,5 segundos troca de slide
+    delay: 5500, // A cada 5,5 segundos troca de slide
     disableOnInteraction: false, // Não pausa ao interagir
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3, // 3 slides para telas maiores que 768px
+      spaceBetween: 100,
+    },
+    0: {
+      slidesPerView: 1, // 1 slide para telas menores que 768px
+      spaceBetween: 20,
+    },
   },
 });
 

@@ -14,18 +14,20 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link href="./output.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
 
   <body>
     <header>
-      <h1 class="text-4xl">
-        André
-        <span class="text-blue-500">.</span>
-      </h1>
+      <a href="#hero">
+        <h1 class="text-4xl">
+          André
+          <span class="text-blue-500">.</span>
+        </h1>
+      </a>
       <nav id="header-cont" class="hidden md:block">
-        <ul class="flex gap-8 text-lg" id="header-menu">
+        <ul class="flex space-x-8 text-lg" id="header-menu">
           <li class="header-cont">
             <a href="#hero"> Inicio</a>
           </li>
@@ -53,31 +55,29 @@
         >
           <div
             id="hero-cont"
-            class="flex w-full flex-col justify-center gap-10 md:w-150"
+            class="flex w-full flex-col justify-center space-y-10 md:w-150"
           >
-            <p class="uppercase">
+            <p class="text-bold uppercase">
               Software<span class="text-blue-500"> Developer</span>
             </p>
             <h2 class="-mt-8 w-full text-4xl md:text-5xl">
               Olá, eu sou o André
               <span class="text-blue-500">Desenvolvedor fullstack</span>
             </h2>
-            <p class="w-full text-lg">
+            <p class="w-full text-justify text-lg">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
               quidem ad, impedit nulla, quae amet perferendis ducimus sapiente
               mollitia illum aut itaque quas dolore dolorum quisquam sequi qui
               voluptas molestias?
             </p>
-            <div class="flex gap-5" id="botoes">
+            <div class="flex space-x-5" id="botoes">
               <button class="botao1 h-9 w-30">Contato</button>
-              <button
-                class="botao2 flex h-9 w-30 items-center justify-center gap-1"
-              >
+              <button class="botao2 flex h-9 w-30 items-center justify-center">
                 Curriculo
                 <i class="fa-solid fa-download"></i>
               </button>
             </div>
-            <div id="icones" class="flex gap-5">
+            <div id="icones" class="flex space-x-5">
               <a href="">
                 <i class="fa-brands fa-square-facebook btnRedes"></i>
               </a>
@@ -103,35 +103,67 @@
         />
         <div
           id="sobre-cont"
-          class="flex w-full flex-col justify-center gap-10 rounded-4xl p-10 md:w-200"
+          class="flex w-full flex-col justify-center space-y-5 rounded-4xl md:w-160"
         >
           <h2 class="text-5xl font-bold">
             SOBRE
             <span class="text-blue-500">MIM</span>
           </h2>
-          <p
-            class="rounded-xl bg-zinc-900 p-5 text-xl inset-shadow-xs inset-shadow-[#121214]"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-            labore odit dignissimos. Asperiores soluta repellendus consequatur
-            quo quasi eos reprehenderit eveniet harum aut, beatae molestiae,
-            odio porro distinctio, non magnam. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Nisi, laudantium. Inventore cupiditate
-            itaque iste provident, praesentium officiis! Labore expedita quam
-            culpa non! Optio iste similique quo possimus aspernatur beatae
-            tempora?
+          <p class="text-normal text-justify">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex ad
+            facilis iure repellendus reiciendis vero facere cupiditate
+            voluptates aperiam. Voluptas delectus sunt omnis magnam dolorem
+            facilis illum incidunt quae debitis?
           </p>
-          <div id="botoes" class="flex justify-between">
-            <div class="botoes-cont flex gap-5">
+          <h3 class="text-2xl">TECNOLOGIAS</h3>
+
+          <div
+            id="tecnologias-container"
+            class="rounded-x mb-5 overflow-hidden"
+          >
+            <div
+              id="tec-container"
+              class="animate-marquee flex items-center justify-between space-x-10 p-2"
+            >
+              <!-- Primeira lista de ícones -->
+              <img src="images/html5.svg" class="tecnologias" />
+              <img src="images/css.svg" class="tecnologias" />
+              <img src="images/tailwindcss.svg" class="tecnologias" />
+              <img src="images/react.svg" class="tecnologias" />
+              <img src="images/php.svg" class="tecnologias" />
+              <img src="images/mysql.svg" class="tecnologias" />
+              <img src="images/laravel.svg" class="tecnologias" />
+              <img src="images/git.svg" class="tecnologias" />
+              <img src="images/github.svg" class="tecnologias" />
+              <img src="images/vite.svg" class="tecnologias" />
+              <img src="images/nodedotjs.svg" class="tecnologias" />
+
+              <!-- Segunda lista de ícones (duplicada) -->
+              <img src="images/html5.svg" class="tecnologias" />
+              <img src="images/css.svg" class="tecnologias" />
+              <img src="images/tailwindcss.svg" class="tecnologias" />
+              <img src="images/react.svg" class="tecnologias" />
+              <img src="images/php.svg" class="tecnologias" />
+              <img src="images/mysql.svg" class="tecnologias" />
+              <img src="images/laravel.svg" class="tecnologias" />
+              <img src="images/git.svg" class="tecnologias" />
+              <img src="images/github.svg" class="tecnologias" />
+              <img src="images/vite.svg" class="tecnologias" />
+              <img src="images/nodedotjs.svg" class="tecnologias" />
+            </div>
+          </div>
+          <div
+            id="botoes"
+            class="flex flex-col justify-between space-y-10 md:flex-row md:space-y-0"
+          >
+            <div class="botoes-cont flex space-x-5">
               <button class="botao1 h-9 w-30">Contato</button>
-              <label
-                class="botao2 flex h-9 w-30 items-center justify-center gap-1"
-              >
+              <label class="botao2 flex h-9 w-30 items-center justify-center">
                 Curriculo
                 <i class="fa-solid fa-download"></i>
               </label>
             </div>
-            <div id="icones" class="flex gap-5">
+            <div id="icones" class="flex space-x-5">
               <a href="">
                 <i class="fa-brands fa-square-facebook btnRedes"></i>
               </a>
@@ -151,7 +183,10 @@
           <h2 class="mb-10 text-center text-5xl font-bold text-blue-500">
             HABILIDADES
           </h2>
-          <div id="habilidades-container" class="grid w-full grid-cols-3 gap-5">
+          <div
+            id="habilidades-container"
+            class="grid w-full grid-cols-2 gap-5 md:grid-cols-3"
+          >
             <div id="habilidades-cont" class="habilidades-cont">
               <i class="fa-solid fa-palette mb-3 text-4xl text-blue-500"></i>
               <h3 class="mb-2 text-xl text-blue-400">UI Design</h3>
@@ -190,31 +225,12 @@
             </div>
           </div>
         </div>
-
-        <div id="tecnologias-container" class="mt-5">
-          <div
-            id="tec-container"
-            class="flex w-full items-center justify-between bg-[#242427] p-5"
-          >
-            <img src="images/html5.svg" class="tecnologias" />
-            <img src="images/css.svg" class="tecnologias" />
-            <img src="images/tailwindcss.svg" class="tecnologias" />
-            <img src="images/react.svg" class="tecnologias" />
-            <img src="images/php.svg" class="tecnologias" />
-            <img src="images/mysql.svg" class="tecnologias" />
-            <img src="images/laravel.svg" class="tecnologias" />
-            <img src="images/git.svg" class="tecnologias" />
-            <img src="images/github.svg" class="tecnologias" />
-            <img src="images/vite.svg" class="tecnologias" />
-            <img src="images/nodedotjs.svg" class="tecnologias" />
-          </div>
-        </div>
       </section>
 
       <section id="projetos" class="projetos">
-        <h2 class="mb-15 text-center text-5xl font-bold">
+        <h2 class="mb-10 text-center text-5xl font-bold">
           MEUS
-          <span class="text-blue-400">PROJETOS</span>
+          <span class="text-blue-500">PROJETOS</span>
         </h2>
 
         <div class="swiper">
@@ -245,13 +261,13 @@
         <form
           action=""
           method="post"
-          class="form-contato w-full max-w-lg rounded-lg p-8 shadow-lg"
+          class="form-contato w-full max-w-lg space-y-2 rounded-lg p-8 shadow-lg"
         >
-          <h2 class="mb-5 text-center text-4xl font-bold text-blue-500">
+          <h2 class="text-center text-4xl font-bold text-blue-500">
             MANDE UM
             <spa class="text-blue-500">EMAIL</spa>
           </h2>
-          <p class="mb-8 text-justify text-lg text-zinc-400">
+          <p class="text-justify text-lg text-zinc-400">
             Entre em contato para mais informações ou dúvidas. Responderemos o
             mais breve possível!
           </p>
@@ -309,7 +325,7 @@
 
     <footer>
       <p>Feito por Ruan &copy 2025</p>
-      <ul class="flex gap-6">
+      <ul class="flex space-x-6">
         <li>
           <a href="#">Facebook</a>
         </li>

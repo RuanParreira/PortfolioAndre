@@ -6,6 +6,29 @@
   --font-poppins: Poppins, "sans-serif";
 }
 
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+
+  .animate-marquee {
+    width: 200%;
+    animation: marquee 10s linear infinite;
+  }
+
+  @media (min-width: 768px) {
+    .animate-marquee {
+      width: 100%;
+      animation: marquee 15s linear infinite;
+    }
+  }
+}
+
 @layer base {
   html {
     @apply font-poppins scroll-smooth;
@@ -34,19 +57,19 @@
   }
 
   .sobre {
-    @apply flex h-screen scroll-m-[5rem] flex-col items-center justify-between bg-[#121214] px-[10%] md:flex-row;
+    @apply flex h-screen scroll-m-[5rem] flex-col items-center justify-center bg-[#121214] px-[4%] py-0 md:h-[calc(100vh-5rem)] md:flex-row md:justify-between md:px-[10%];
   }
 
   .habilidades {
-    @apply flex flex-col justify-center px-[10%] py-30;
+    @apply flex scroll-m-[5rem] flex-col justify-center px-[4%] py-10 md:h-[calc(100vh-5rem)] md:px-[10%] md:py-0;
   }
 
   .projetos {
-    @apply relative flex scroll-m-[5rem] flex-col items-center justify-center px-[16%] py-18;
+    @apply relative flex h-screen scroll-m-[5rem] flex-col items-center justify-center bg-[#121214] px-[16%] py-0 md:h-[calc(100vh-5rem)];
   }
 
   .contato {
-    @apply flex items-center justify-center space-x-20 bg-[#121214] px-[10%] py-30;
+    @apply flex scroll-m-[5rem] items-center justify-center space-x-20 px-[10%] md:h-[calc(100vh-5rem)] md:py-0;
   }
 
   .scrolled {
@@ -74,7 +97,7 @@
   }
 
   .swiper {
-    @apply h-130 w-full;
+    @apply h-120 w-full;
   }
 
   .swiper-slide {
@@ -93,7 +116,7 @@
   }
 
   .form-input {
-    @apply mb-5 w-full rounded-md bg-zinc-900 p-3 text-zinc-50 placeholder-zinc-500 focus:border-blue-500 focus:outline-none;
+    @apply w-full rounded-md bg-zinc-900 p-3 text-zinc-50 placeholder-zinc-500 focus:border-blue-500 focus:outline-none;
   }
 
   .item-contato {
