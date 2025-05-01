@@ -28,6 +28,14 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {

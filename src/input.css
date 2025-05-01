@@ -52,6 +52,22 @@
     @apply transition-all duration-300 ease-in-out after:absolute after:bottom-0 after:left-0 after:h-[0.1rem] after:w-0 after:bg-blue-500 after:transition-all after:duration-300 after:content-[''] hover:after:w-full lg:relative;
   }
 
+  .sidepanel {
+    @apply fixed top-0 right-0 z-[1] h-full w-0 overflow-x-hidden bg-[#111] pt-[60px] transition-all duration-500;
+  }
+
+  .sidepanel-cont {
+    @apply block px-2 py-2 pl-8 text-[25px] text-[#818181] no-underline transition-all duration-300 hover:bg-gray-900;
+  }
+
+  .closebtn {
+    @apply absolute top-5 right-[25px] text-[36px];
+  }
+
+  .openbtn {
+    @apply cursor-pointer border-none px-[15px] py-[10px] text-[20px] text-white;
+  }
+
   .hero {
     @apply my-5 flex scroll-m-[5rem] flex-col items-center justify-center px-[4%] lg:my-0 lg:h-[calc(100vh-5rem)] lg:px-[10%];
   }

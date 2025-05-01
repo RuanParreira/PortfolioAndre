@@ -26,6 +26,7 @@
           <span class="text-blue-500">.</span>
         </h1>
       </a>
+
       <nav id="header-cont" class="hidden lg:block">
         <ul class="flex space-x-8 text-lg" id="header-menu">
           <li class="header-cont">
@@ -45,6 +46,19 @@
           </li>
         </ul>
       </nav>
+
+      <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          <i class="fa-solid fa-x"></i>
+        </a>
+        <a href="#" class="sidepanel-cont">Inicio</a>
+        <a href="#" class="sidepanel-cont">Sobre</a>
+        <a href="#" class="sidepanel-cont">Habilidades</a>
+        <a href="#" class="sidepanel-cont">Projetos</a>
+        <a href="#" class="sidepanel-cont">Contato</a>
+      </div>
+
+      <button class="openbtn text-3xl lg:hidden" onclick="openNav()">☰</button>
     </header>
 
     <main>
@@ -57,7 +71,7 @@
             id="hero-cont"
             class="flex w-full flex-col justify-center space-y-10 lg:w-150"
           >
-            <p class="text-bold uppercase">
+            <p class="text-bold mt-5 uppercase lg:mt-0">
               Software<span class="text-blue-500"> Developer</span>
             </p>
             <h2 class="-mt-8 w-full text-4xl lg:text-5xl">
@@ -91,10 +105,15 @@
               </a>
             </div>
           </div>
-          <img
-            class="mb-8 h-60 w-60 rounded-4xl object-cover inset-shadow-sm inset-shadow-blue-500/60 lg:mb-0 lg:h-130 lg:w-100"
-            src="src/images/foto.png"
-          />
+          <div
+            class="relative h-60 w-60 overflow-hidden rounded-4xl shadow-inner shadow-blue-500/60 lg:h-[32.5rem] lg:w-[25rem]"
+          >
+            <img
+              class="absolute top-[-20px] left-0 h-auto w-full object-cover"
+              src="src/images/foto.png"
+              alt="Foto"
+            />
+          </div>
         </div>
       </section>
 
